@@ -1,0 +1,24 @@
+atilaromero@pcensino13:~/trab17$ emacs -nw prog.c
+atilaromero@pcensino13:~/trab17$ gcc -lm prog.c -o prog && ./prog 
+
+ *** Usando o método de iteração simples:***
+ Encontrei a raiz 0.030314 em 26 iterações !
+
+ *** Usando o método de Newton-Raphson:***
+ Encontrei a raiz 0.001562 em 7 iterações !
+atilaromero@pcensino13:~/trab17$ emacs -nw prog.c
+atilaromero@pcensino13:~/trab17$ gcc -lm prog.c -o prog && ./prog 
+
+ *** Usando o método de iteração simples:***
+ Encontrei a raiz 0.500000 em 5 iterações !
+
+ *** Usando o método de Newton-Raphson:***
+ Encontrei a raiz -0.000762 em 4 iterações !
+atilaromero@pcensino13:~/trab17$ emacs -nw prog.c
+atilaromero@pcensino13:~/trab17$ gcc -lm prog.c -o prog && ./prog 
+
+ *** Usando o método de iteração simples:***
+não consigo encontrar esta raiz (#iter=100000) 
+
+ *** Usando o método de Newton-Raphson:***
+ Encontrei a raiz -0.000552 em 3 iterações !

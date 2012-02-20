@@ -1,0 +1,80 @@
+
+%%% cabecalho %%%
+\documentclass[brazilian,12pt,a4paper,final]{article}
+\usepackage[brazil]{babel}% *babel* contem as regras de ifenização
+%\usepackage{t1enc}% *t1enc* permite o reconhecimento dos acentos do teclado
+\usepackage[utf8]{inputenc}% permite reconhecimento automático de acentuação.
+\usepackage{graphicx} % para incluir figuras em formato eps 
+%ou
+%\usepackage[pdftex]{graphicx}% para produzir PDF diretamente
+\usepackage{color} % fontes soloridas
+%%% fim do cabecalho %%%
+
+\pagestyle{empty}
+%\title{Métodos Computacionais da Física A \\ Trabalho 15}
+%\author{Aluno: Átila Leites Romero \\ Matrícula: 144679 \\ IF-UFRGS}
+
+\begin{document}
+%\maketitle
+
+$S = (y_i-({\alpha}_0 +{\alpha}_1 x+ {\alpha}_2 x^2))^2$
+
+$\frac{\delta S}{\delta {\alpha}_0} = 2(y_i-({\alpha}_0 +{\alpha}_1 x+ {\alpha}_2 x^2))(-1)$
+
+$\frac{\delta S}{\delta {\alpha}_1} = 2(y_i-({\alpha}_0 +{\alpha}_1 x+ {\alpha}_2 x^2))(-x)$
+
+$\frac{\delta S}{\delta {\alpha}_2} = 2(y_i-({\alpha}_0 +{\alpha} 1 x+ {\alpha}_2 x^2))(-x^2)$
+
+----
+
+$0 = 2(y_i-({\alpha}_0 +{\alpha}_1 x+ {\alpha}_2 x^2))(-1)$
+
+$0 = 2(y_i-({\alpha}_0 +{\alpha}_1 x+ {\alpha}_2 x^2))(-x)$
+
+$0 = 2(y_i-({\alpha}_0 +{\alpha} 1 x+ {\alpha}_2 x^2))(-x^2)$
+
+----
+
+$0 = (y_i-({\alpha}_0 +{\alpha}_1 x+ {\alpha}_2 x^2))(-1)$
+
+$0 = (y_i-({\alpha}_0 +{\alpha}_1 x+ {\alpha}_2 x^2))(-x)$
+
+$0 = (y_i-({\alpha}_0 +{\alpha} 1 x+ {\alpha}_2 x^2))(-x^2)$
+
+----
+
+$0 = ({\alpha}_0 +{\alpha}_1 x+ {\alpha}_2 x^2)(1)+(-1)(y_i)$
+
+$0 = ({\alpha}_0 +{\alpha}_1 x+ {\alpha}_2 x^2)(x)+(-x)(y_i)$
+
+$0 = ({\alpha}_0 +{\alpha} 1 x+ {\alpha}_2 x^2)(x^2)+(-x^2)(y_i)$
+
+----
+
+$({\alpha}_0 +{\alpha}_1 x+ {\alpha}_2 x^2)(1)=(1)(y_i)$
+
+$({\alpha}_0 +{\alpha}_1 x+ {\alpha}_2 x^2)(x)=(x)(y_i)$
+
+$({\alpha}_0 +{\alpha} 1 x+ {\alpha}_2 x^2)(x^2)=(x^2)(y_i)$
+
+----
+
+$
+\left|\begin{array}{ccc}
+1   & x   & x^2\\
+x   & x^2 & x^3\\
+x^2 & x^3 & x^4\\
+\end{array} \right|
+\left|\begin{array}{c}
+{\alpha}_0\\
+{\alpha}_1\\
+{\alpha}_2\\
+\end{array} \right|
+= 
+\left|\begin{array}{c}
+1 y_i\\
+x y_i\\
+x^2 y_i\\
+\end{array} \right|
+$
+\end{document}

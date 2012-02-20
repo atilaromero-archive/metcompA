@@ -1,0 +1,73 @@
+% ------------------------------------------------------------- 
+% Arquivo :  relatório modelo                                        
+% ------------------------------------------------------------- 
+% O percentual(%) serve para incluir comentários: 
+% tudo o que fica à direita dele não é interpretado pelo LaTex
+% Linhas e espaços em branco também **NÃO** são
+% interpretadas pelo LaTex
+
+%% As intruções seguintes são o cabeçalho e devem estar antes do
+%% \begin{document}
+
+%\documenclass: mandatorio, indica o tipo/formato de documento
+\documentclass[brazilian,12pt,a4paper,final]{article}
+% tamanhos de fontes: 10pt, 11pt ou 12pt
+% opções de estilo (padrões): article, report, book, slide, letter (artigo, relatorio, livro, apresentação de slides, carta)
+
+
+
+
+%% Pacotes extras (opcionais):
+
+% *babel* contem as regras de ifenização
+\usepackage[brazil]{babel}
+
+% *t1enc* permite o reconhecimento dos acentos inseridos com o teclado
+%\usepackage{t1enc}
+
+% *inputenc* com opção *utf8* permite reconhecimento dos caracteres com codificação UTF8, que é padrão dos esditores de texto no Linux. Isso permite reconhecimento automático de acentuação.
+\usepackage[utf8]{inputenc}
+
+
+% *graphicx* é para incluir figuras em formato eps 
+\usepackage{graphicx} % para produzir PDF diretamente reescrever esta linha assim: \usepackage[pdftex]{graphicx}
+
+% *color* fontes soloridas
+\usepackage{color}
+%%% fim do cabecalho %%%
+
+\pagestyle{empty}
+\title{Métodos Computacionais da Física A - prova}
+\author{Aluno: Átila Leites Romero - Matrícula: 144679 \\ IF-UFRGS}
+
+\begin{document}
+\maketitle
+
+\section{} 
+Quando $h$ é muito grande, a imprecisão ocorre quando o valor da derivada em $(x+h)$ é muito diferente do valor da derida em $(x)$, logo a reta que passa pelos dois pontos não vai coincidir com suas derivadas. Já quando $h$ é muito pequeno, as variáveis são utilizadas perto de seus limites e pode ocorrer que sejam arredondadas para zero ou até que ocorra overflow por causa de uma divisão.
+
+\section{}
+a) Interpolar seria encontrar um ponto intermediário entre os pontos conhecidos, enquanto extrapolar seria encontrar um ponto fora do intervalo que os contém.
+
+b) O algoritmo de Neville encontra um polinômio que passe por todos os pontos fornecidos. Ele faz isso de forma incremental, encontrando polinômios intermediários que são então usados para calcular os de ordem mais alta. Na verdade ele não calcula o polinômio em si, mas a resposta que seria obtida se este polinômio fosse aplicado no ponto desejado.
+
+c) Não, ela melhora até certo ponto, então os resultados começam a piorar. As pequenas imprecisões passam a ser amplificadas. Os polinômios utilizados passam a ser de ordem muito elevada, introduzindo uma complexidade que não existia na origem dos dados.
+
+\section{}
+a) Encontrei a raiz 0.419413 em 2 iterações !
+
+c) Somente a última, porque a $|\frac{\delta}{\delta x}f + 1|$  nos outros dois pontos é maior que $1$.
+
+$\frac{\delta}{\delta x}f + 1$ nos pontos $-1.570798$, 
+$-0.000022$ e
+$1.570795$:
+\begin{verbatim}
+-1.340178
+3.000000
+-0.709272
+\end{verbatim}
+
+d) Nenhum problema, porque a função é bem comportada. Daria um pouco mais de trabalho apenas, porque dois pontos precisariam ser escolhidos, de preferência usando um gráfico. O de Newton-Raphson tem a vantagem de só precisar de um ponto, o que facilita muito a automatização.
+
+\end{document}
+
