@@ -1,0 +1,21 @@
+trab02 gnuplot 2d
+trab03 gnuplot 2d e 3d
+trab04 relatorio latex
+trab05 exercicio latex
+trab06 multiplos
+trab07 random
+trab08 média e desvio padrão
+trab09 fatorial, long, long long, double, long double
+trab10 derivada
+trab11 derivada
+trab12 integral
+trab14 neville
+trab15 neville
+trab16
+trab17
+trab18
+trab19
+trab20
+prova1
+prova2
+
